@@ -14,6 +14,7 @@ typedoc.json
 .gitignore
 .gitleaks.toml
 .gitleaksignore
+.release-please-config.json
 .husky/
 .lintstagedrc.js
 commitlint.config.js
