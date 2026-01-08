@@ -138,6 +138,6 @@ ISC
 
 ## Links
 
-- [GitHub Repository](https://github.com/yourusername/jira-extractor)
-- [Report Issues](https://github.com/yourusername/jira-extractor/issues)
+- [GitHub Repository](https://github.com/pixari/jira-extractor)
+- [Report Issues](https://github.com/pixari/jira-extractor/issues)
 - [JQL Documentation](https://support.atlassian.com/jira-software-cloud/docs/use-advanced-search-with-jira-query-language-jql/)
