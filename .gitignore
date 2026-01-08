@@ -40,7 +40,7 @@ yarn-error.log*
 .cache/
 .temp/
 analysis/
-analysis
+jira-export.json
 
 # Config files (may contain sensitive data)
 .jirarc.json
