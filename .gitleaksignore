@@ -1,0 +1,10 @@
+# Gitleaks ignore file
+# Add false positives here
+
+# Example patterns in test files are OK
+test-debug.json
+jira-export.json
+examples/**/*
+
+# Documentation examples
+README.md

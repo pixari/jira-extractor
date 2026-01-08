@@ -1,0 +1,85 @@
+{
+  "name": "jira-extractor",
+  "version": "1.0.0",
+  "description": "A TypeScript library and CLI tool for extracting Jira issues using JQL queries with configurable rate limiting",
+  "author": "Raffaele Pizzari <raffaele.pizzari@gmail.com>",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "jira-extract": "./dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "dev": "tsx src/cli/index.ts",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src tests --ext .ts",
+    "lint:fix": "eslint src tests --ext .ts --fix",
+    "format": "prettier --write \"src/**/*.ts\" \"tests/**/*.ts\"",
+    "format:check": "prettier --check \"src/**/*.ts\" \"tests/**/*.ts\"",
+    "typecheck": "tsc --noEmit",
+    "docs": "typedoc --out docs src/index.ts",
+    "docs:json": "typedoc --json docs/documentation.json src/index.ts",
+    "validate": "npm run lint && npm run typecheck && npm run test",
+    "validate:package": "npm run build && publint && attw --pack .",
+    "security:audit": "npm audit --audit-level=moderate",
+    "security:scan": "gitleaks detect --verbose --no-git",
+    "prepare": "husky",
+    "prepublishOnly": "npm run validate && npm run build"
+  },
+  "keywords": [
+    "jira",
+    "atlassian",
+    "jql",
+    "extractor",
+    "cli",
+    "rest-api",
+    "typescript"
+  ],
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pixari/jira-extractor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pixari/jira-extractor/issues"
+  },
+  "homepage": "https://github.com/pixari/jira-extractor#readme",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@clack/prompts": "^0.7.0",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0",
+    "p-queue": "^8.0.1",
+    "p-retry": "^6.1.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^20.3.0",
+    "@commitlint/config-conventional": "^20.3.0",
+    "@types/jest": "^29.5.0",
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "eslint": "^8.55.0",
+    "eslint-config-prettier": "^9.1.0",
+    "husky": "^9.1.7",
+    "jest": "^29.7.0",
+    "lint-staged": "^16.2.7",
+    "nock": "^13.4.0",
+    "prettier": "^3.1.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.0",
+    "tsx": "^4.7.0",
+    "typedoc": "^0.26.0",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

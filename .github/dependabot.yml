@@ -1,0 +1,41 @@
+version: 2
+updates:
+  # Keep npm dependencies up to date
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+      day: 'monday'
+    open-pull-requests-limit: 10
+    groups:
+      # Group TypeScript and ESLint related updates
+      typescript:
+        patterns:
+          - 'typescript'
+          - '@typescript-eslint/*'
+          - 'ts-*'
+      # Group testing dependencies
+      testing:
+        patterns:
+          - 'jest'
+          - '@types/jest'
+          - 'ts-jest'
+      # Group linting and formatting
+      code-quality:
+        patterns:
+          - 'eslint*'
+          - 'prettier'
+          - 'lint-staged'
+          - 'husky'
+    commit-message:
+      prefix: 'chore'
+      include: 'scope'
+
+  # Keep GitHub Actions up to date
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+      day: 'monday'
+    commit-message:
+      prefix: 'ci'

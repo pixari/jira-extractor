@@ -1,0 +1,30 @@
+# Gitleaks configuration
+# Docs: https://github.com/gitleaks/gitleaks
+
+title = "Gitleaks config for jira-extractor"
+
+[extend]
+# Use default gitleaks rules
+useDefault = true
+
+[allowlist]
+description = "Allowlist for false positives"
+
+# Ignore test and example files
+paths = [
+  '''test-debug\.json''',
+  '''jira-export\.json''',
+  '''examples/.*''',
+  '''tests/.*\.test\.ts''',
+  '''^\.env\.example$''',
+]
+
+# Ignore specific patterns that are safe
+regexes = [
+  # Example API URLs in documentation
+  '''https://.*\.atlassian\.net''',
+  # Generic placeholder tokens in examples
+  '''your_token_here''',
+  '''your_api_token''',
+  '''JIRA_API_TOKEN''',
+]

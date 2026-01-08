@@ -1,0 +1,43 @@
+# Source files
+src/
+tests/
+examples/
+
+# Config files
+.env.example
+.eslintrc.js
+.prettierrc
+jest.config.js
+tsconfig.json
+tsconfig.build.json
+typedoc.json
+.gitignore
+.gitleaks.toml
+.gitleaksignore
+.husky/
+.lintstagedrc.js
+commitlint.config.js
+
+# Build artifacts
+test-debug.json
+jira-export.json
+*.log
+*.tgz
+
+# Documentation and coverage
+docs/
+coverage/
+
+# IDE
+.vscode/
+.idea/
+
+# Git
+.git/
+.gitattributes
+
+# CI/CD
+.github/
+
+# Documentation for development
+CONTRIBUTING.md
