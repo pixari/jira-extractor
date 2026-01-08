@@ -15,9 +15,6 @@ jobs:
     steps:
       - uses: googleapis/release-please-action@v4
         id: release
-        with:
-          release-type: node
-          package-name: jira-extractor
 
       # Publish to npm when a release is created
       - uses: actions/checkout@v4
