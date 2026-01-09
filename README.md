@@ -4,6 +4,7 @@ A TypeScript library and CLI tool for extracting Jira issues using JQL queries w
 
 [![CI](https://github.com/pixari/jira-extractor/actions/workflows/ci.yml/badge.svg)](https://github.com/pixari/jira-extractor/actions/workflows/ci.yml)
 [![CodeQL](https://github.com/pixari/jira-extractor/actions/workflows/codeql.yml/badge.svg)](https://github.com/pixari/jira-extractor/actions/workflows/codeql.yml)
+[![codecov](https://codecov.io/gh/pixari/jira-extractor/graph/badge.svg)](https://codecov.io/gh/pixari/jira-extractor)
 [![npm version](https://img.shields.io/npm/v/jira-extractor.svg)](https://www.npmjs.com/package/jira-extractor)
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 [![Node.js Version](https://img.shields.io/node/v/jira-extractor.svg)](https://nodejs.org)
