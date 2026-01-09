@@ -66,12 +66,17 @@ for await (const issue of client.searchIssues('project = PROJ')) {
 
 ## Documentation
 
+📚 **[Complete Documentation](docs/)** - Full documentation index
+
+Quick Links:
+
 - **[Installation Guide](docs/installation.md)** - Setup and configuration
 - **[Usage Guide](docs/usage.md)** - Examples and common use cases
 - **[CLI Reference](docs/cli.md)** - Command-line options
 - **[API Reference](docs/api.md)** - Programmatic API
-- **[Contributing](docs/contributing.md)** - Development guide
 - **[Troubleshooting](docs/troubleshooting.md)** - Common issues and solutions
+- **[Contributing](docs/contributing.md)** - Development guide
+- **[Security Policy](docs/SECURITY.md)** - Security guidelines
 
 ## Key Capabilities
 

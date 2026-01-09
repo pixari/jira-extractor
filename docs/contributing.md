@@ -3,7 +3,7 @@
 ## Setup
 
 ```bash
-git clone https://github.com/yourusername/jira-extractor.git
+git clone https://github.com/pixari/jira-extractor.git
 cd jira-extractor
 npm install
 npm run build
