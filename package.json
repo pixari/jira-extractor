@@ -6,7 +6,7 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "bin": {
-    "jira-extract": "./dist/cli/index.js"
+    "jira-extract": "dist/cli/index.js"
   },
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
@@ -40,7 +40,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pixari/jira-extractor.git"
+    "url": "git+https://github.com/pixari/jira-extractor.git"
   },
   "bugs": {
     "url": "https://github.com/pixari/jira-extractor/issues"
