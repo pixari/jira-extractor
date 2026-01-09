@@ -15,22 +15,35 @@ Benefits:
 
 ### 1. Configure npm for Trusted Publishing
 
+⚠️ **MUST DO THIS FIRST** - The GitHub Actions workflow is already working but npm needs to be configured!
+
 1. **Go to your package settings on npm**:
-   - If package exists: https://www.npmjs.com/package/jira-extractor/access
-   - If package doesn't exist yet: https://www.npmjs.com/settings/[your-username]/packages
+   - Package exists, go here: https://www.npmjs.com/package/jira-extractor/access
+   - OR general settings: https://www.npmjs.com/settings/pixari/packages
 
-2. **Add GitHub Actions as a trusted publisher**:
-   - Look for "Publishing access" or "Trusted Publishers" section
-   - Click "Add provider" or "Configure"
-   - Select: **GitHub Actions**
+2. **Look for "Publishing access" or "Automation tokens" or "Trusted publishers" section**
 
-3. **Configure the GitHub Actions publisher**:
+3. **Add GitHub Actions as a trusted publisher**:
+   - Click "Add" or "Configure" or "Add trusted publisher"
+   - Provider: **GitHub Actions**
+
+4. **Configure the GitHub Actions publisher** with these exact values:
    - **GitHub repository owner**: `pixari`
    - **GitHub repository name**: `jira-extractor`
-   - **Workflow name**: `release-please.yml`
-   - **Environment** (optional): Leave blank for now
+   - **Workflow filename**: `release-please.yml`
+   - **Environment** (optional): Leave blank
 
-4. **Save** the configuration
+5. **Save** the configuration
+
+### Current Error Without This Setup:
+
+```
+npm error 404 Not Found - PUT https://registry.npmjs.org/jira-extractor
+npm error code E404
+Access token expired or revoked
+```
+
+This happens because npm sees the OIDC token but hasn't been told to trust it yet!
 
 ### 2. Update the Workflow (Remove NPM_TOKEN)
 
