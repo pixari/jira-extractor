@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.2](https://github.com/pixari/jira-extractor/compare/v1.2.1...v1.2.2) (2026-01-09)
+
+
+### Bug Fixes
+
+* remove NODE_AUTH_TOKEN to use pure OIDC trusted publishing ([6e2ec49](https://github.com/pixari/jira-extractor/commit/6e2ec4908b6a96c3187752d89a29d13c2ff3785d))
+
 ## [1.2.1](https://github.com/pixari/jira-extractor/compare/v1.2.0...v1.2.1) (2026-01-09)
 
 
