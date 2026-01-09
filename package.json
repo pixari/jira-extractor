@@ -1,6 +1,6 @@
 {
   "name": "jira-extractor",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A TypeScript library and CLI tool for extracting Jira issues using JQL queries with configurable rate limiting",
   "author": "Raffaele Pizzari <raffaele.pizzari@gmail.com>",
   "main": "./dist/index.js",
