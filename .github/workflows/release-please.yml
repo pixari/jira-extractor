@@ -8,6 +8,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  id-token: write # Required for npm provenance
 
 jobs:
   release-please:
@@ -40,6 +41,6 @@ jobs:
 
       - name: Publish to npm
         if: ${{ steps.release.outputs.release_created }}
-        run: npm publish
+        run: npm publish --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
