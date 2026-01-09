@@ -12,8 +12,8 @@ Complete documentation for the jira-extractor library and CLI tool.
 
 ## Development Documentation
 
-- **[Contributing Guide](contributing.md)** - How to contribute to the project
-- **[Security Policy](SECURITY.md)** - Security guidelines and reporting vulnerabilities
+- **[Contributing Guide](../CONTRIBUTING.md)** - How to contribute to the project
+- **[Security Policy](../SECURITY.md)** - Security guidelines and reporting vulnerabilities
 
 ## Publishing & Release Documentation
 
@@ -31,4 +31,4 @@ Complete documentation for the jira-extractor library and CLI tool.
 ## Getting Help
 
 - **Issues**: Report bugs or request features on [GitHub Issues](https://github.com/pixari/jira-extractor/issues)
-- **Security**: Report security vulnerabilities following our [Security Policy](SECURITY.md)
+- **Security**: Report security vulnerabilities following our [Security Policy](../SECURITY.md)

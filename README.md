@@ -75,8 +75,11 @@ Quick Links:
 - **[CLI Reference](docs/cli.md)** - Command-line options
 - **[API Reference](docs/api.md)** - Programmatic API
 - **[Troubleshooting](docs/troubleshooting.md)** - Common issues and solutions
-- **[Contributing](docs/contributing.md)** - Development guide
-- **[Security Policy](docs/SECURITY.md)** - Security guidelines
+
+**Contributing & Security:**
+
+- **[Contributing Guide](CONTRIBUTING.md)** - How to contribute
+- **[Security Policy](SECURITY.md)** - Report security issues
 
 ## Key Capabilities
 
@@ -133,7 +136,7 @@ auth: {
 
 ## Contributing
 
-Contributions welcome! See [Contributing Guide](docs/contributing.md).
+Contributions welcome! See [Contributing Guide](CONTRIBUTING.md).
 
 This project uses conventional commits enforced by commitlint and husky hooks.
 
