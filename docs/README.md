@@ -15,12 +15,6 @@ Complete documentation for the jira-extractor library and CLI tool.
 - **[Contributing Guide](../CONTRIBUTING.md)** - How to contribute to the project
 - **[Security Policy](../SECURITY.md)** - Security guidelines and reporting vulnerabilities
 
-## Publishing & Release Documentation
-
-- **[Trusted Publishing Setup](TRUSTED_PUBLISHING_SETUP.md)** - Setting up npm trusted publishing with GitHub Actions
-- **[NPM Token Solution](NPM_TOKEN_SOLUTION.md)** - Alternative token-based publishing approach
-- **[NPM Token Fix](NPM_TOKEN_FIX.md)** - Troubleshooting npm publishing issues
-
 ## Quick Links
 
 - [Main README](../README.md)
