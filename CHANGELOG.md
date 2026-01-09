@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0](https://github.com/pixari/jira-extractor/compare/v1.1.0...v1.2.0) (2026-01-09)
+
+
+### Features
+
+* add npm provenance support to release workflow ([9fff114](https://github.com/pixari/jira-extractor/commit/9fff114af49b4355e16da1da8bff836ad1049f87))
+* migrate to npm Trusted Publishing (no tokens needed) ([be4b9c4](https://github.com/pixari/jira-extractor/commit/be4b9c48fe428008ba80559ccfc41eda210d9c07))
+
+
+### Bug Fixes
+
+* correct package.json bin path and repository URL format ([8214e55](https://github.com/pixari/jira-extractor/commit/8214e5524d2cd7620c2fbe34c4916812a9baa0fb))
+
 ## [1.1.0](https://github.com/pixari/jira-extractor/compare/v1.0.0...v1.1.0) (2026-01-08)
 
 
